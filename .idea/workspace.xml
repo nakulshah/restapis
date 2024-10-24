@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="added spring boot rest api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/HelloControllerTests.java" afterDir="false" />
+    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="with unit tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculateResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/CalculateControllerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +24,20 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -45,6 +57,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build restapis.executor": "Run",
+    "Gradle.CalculateControllerTests.calculateAddition.executor": "Debug",
+    "Gradle.CalculateControllerTests.calculateDefault.executor": "Run",
+    "Gradle.CalculateControllerTests.executor": "Run",
+    "Gradle.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage.executor": "Run",
+    "Gradle.GreetingControllerTests.executor": "Run",
     "Gradle.GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage.executor": "Run",
     "Gradle.HelloControllerTests.executor": "Run",
     "Gradle.HelloControllerTests.noParamHelloShouldReturnDefaultMessage.executor": "Run",
@@ -61,19 +78,102 @@
     "project.structure.side.proportion": "0.2632184"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.HelloControllerTests">
-    <configuration name="RestServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nakulshah.RestServiceApplication" />
-      <module name="restapis.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nakulshah.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.CalculateControllerTests.calculateAddition">
+    <configuration name="CalculateControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculateControllerTests.calculateAddition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateAddition&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculateControllerTests.calculateDefault" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateDefault&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -99,76 +199,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.nakulshah.HelloControllerTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="HelloControllerTests.noParamHelloShouldReturnDefaultMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.nakulshah.HelloControllerTests.noParamHelloShouldReturnDefaultMessage&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="gradlew" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/gradlew" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/sh" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HelloControllerTests" />
-        <item itemvalue="Gradle.HelloControllerTests.noParamHelloShouldReturnDefaultMessage" />
+        <item itemvalue="Gradle.CalculateControllerTests.calculateAddition" />
+        <item itemvalue="Gradle.CalculateControllerTests" />
+        <item itemvalue="Gradle.CalculateControllerTests.calculateDefault" />
+        <item itemvalue="Gradle.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage" />
         <item itemvalue="Gradle.GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage" />
-        <item itemvalue="Application.RestServiceApplication" />
-        <item itemvalue="Shell Script.gradlew" />
       </list>
     </recent_temporary>
   </component>
@@ -197,13 +234,22 @@
       <option name="project" value="LOCAL" />
       <updated>1729220729734</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="with unit tests">
+      <option name="closed" value="true" />
+      <created>1729223181059</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729223181059</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial project" />
     <MESSAGE value="added spring boot rest api" />
-    <option name="LAST_COMMIT_MESSAGE" value="added spring boot rest api" />
+    <MESSAGE value="with unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="with unit tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -212,6 +258,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/nakulshah/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
