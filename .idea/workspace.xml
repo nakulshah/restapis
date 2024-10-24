@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="calculator API">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nakulshah/CalculateControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/CalculateControllerTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="calculator API completed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +55,7 @@
     "Gradle.CalculateControllerTests.calculateBadOperator.executor": "Run",
     "Gradle.CalculateControllerTests.calculateDefault.executor": "Run",
     "Gradle.CalculateControllerTests.calculateDivision.executor": "Run",
+    "Gradle.CalculateControllerTests.calculateNullOperator.executor": "Run",
     "Gradle.CalculateControllerTests.executor": "Run",
     "Gradle.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage.executor": "Run",
     "Gradle.GreetingControllerTests.executor": "Run",
@@ -250,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729731704146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="calculator API completed">
+      <option name="closed" value="true" />
+      <created>1729736332758</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729736332761</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -258,7 +263,8 @@
     <MESSAGE value="added spring boot rest api" />
     <MESSAGE value="with unit tests" />
     <MESSAGE value="calculator API" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculator API" />
+    <MESSAGE value="calculator API completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculator API completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
