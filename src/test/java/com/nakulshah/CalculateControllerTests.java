@@ -22,8 +22,7 @@ public class CalculateControllerTests {
     @Test
     public void calculateDefault() throws Exception {
 
-        this.mockMvc.perform(post("/calculate")).andDo(print()).andExpect(status().isOk())
-                .andExpect(jsonPath("$.result").value(0));
+        this.mockMvc.perform(post("/calculate")).andDo(print()).andExpect(status().isBadRequest());
     }
 
     @Test
@@ -33,6 +32,51 @@ public class CalculateControllerTests {
 
         this.mockMvc.perform(post("/calculate").contentType(MediaType.APPLICATION_JSON).content(requestBody)).andDo(print()).andExpect(status().isOk())
                 .andExpect(jsonPath("$.result").value(5));
+    }
+
+    @Test
+    public void calculateSubtraction() throws Exception {
+
+        String requestBody = "{\"num1\": 3, \"num2\": 2, \"operator\": \"-\"}";
+
+        this.mockMvc.perform(post("/calculate").contentType(MediaType.APPLICATION_JSON).content(requestBody)).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.result").value(1));
+    }
+
+    @Test
+    public void calculateMultiplication() throws Exception {
+
+        String requestBody = "{\"num1\": 3, \"num2\": 2, \"operator\": \"*\"}";
+
+        this.mockMvc.perform(post("/calculate").contentType(MediaType.APPLICATION_JSON).content(requestBody)).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.result").value(6));
+    }
+
+    @Test
+    public void calculateDivision() throws Exception {
+
+        String requestBody = "{\"num1\": 3, \"num2\": 2, \"operator\": \"/\"}";
+
+        this.mockMvc.perform(post("/calculate").contentType(MediaType.APPLICATION_JSON).content(requestBody)).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.result").value(1));
+    }
+
+    @Test
+    public void calculateBadOperator() throws Exception {
+
+        String requestBody = "{\"num1\": 3, \"num2\": 2, \"operator\": \"x\"}";
+
+        this.mockMvc.perform(post("/calculate").contentType(MediaType.APPLICATION_JSON).content(requestBody)).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.result").value(0));
+    }
+
+    @Test
+    public void calculateNullOperator() throws Exception {
+
+        String requestBody = "{\"num1\": 3, \"num2\": 2}";
+
+        this.mockMvc.perform(post("/calculate").contentType(MediaType.APPLICATION_JSON).content(requestBody)).andDo(print()).andExpect(status().isOk())
+                .andExpect(jsonPath("$.result").value(0));
     }
 
 }

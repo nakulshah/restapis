@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="with unit tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculateResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/CalculateControllerTests.java" afterDir="false" />
+    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="calculator API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nakulshah/CalculateControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/CalculateControllerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +55,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build restapis.executor": "Run",
-    "Gradle.CalculateControllerTests.calculateAddition.executor": "Debug",
+    "Gradle.CalculateControllerTests.calculateAddition.executor": "Run",
+    "Gradle.CalculateControllerTests.calculateBadOperator.executor": "Run",
     "Gradle.CalculateControllerTests.calculateDefault.executor": "Run",
+    "Gradle.CalculateControllerTests.calculateDivision.executor": "Run",
     "Gradle.CalculateControllerTests.executor": "Run",
     "Gradle.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage.executor": "Run",
     "Gradle.GreetingControllerTests.executor": "Run",
@@ -78,7 +78,7 @@
     "project.structure.side.proportion": "0.2632184"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.CalculateControllerTests.calculateAddition">
+  <component name="RunManager" selected="Gradle.CalculateControllerTests.calculateNullOperator">
     <configuration name="CalculateControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -103,7 +103,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalculateControllerTests.calculateAddition" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculateControllerTests.calculateBadOperator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateAddition&quot;" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateBadOperator&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -151,7 +151,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculateControllerTests.calculateDivision" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -164,7 +164,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.nakulshah.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage&quot;" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateDivision&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,7 +175,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculateControllerTests.calculateNullOperator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -188,7 +188,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.nakulshah.GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage&quot;" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateNullOperator&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -201,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CalculateControllerTests.calculateAddition" />
-        <item itemvalue="Gradle.CalculateControllerTests" />
+        <item itemvalue="Gradle.CalculateControllerTests.calculateNullOperator" />
+        <item itemvalue="Gradle.CalculateControllerTests.calculateBadOperator" />
+        <item itemvalue="Gradle.CalculateControllerTests.calculateDivision" />
         <item itemvalue="Gradle.CalculateControllerTests.calculateDefault" />
-        <item itemvalue="Gradle.CalculateControllerTests.noParamGreetingShouldReturnDefaultMessage" />
-        <item itemvalue="Gradle.GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage" />
+        <item itemvalue="Gradle.CalculateControllerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -242,14 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729223181059</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="calculator API">
+      <option name="closed" value="true" />
+      <created>1729731704144</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729731704146</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial project" />
     <MESSAGE value="added spring boot rest api" />
     <MESSAGE value="with unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="with unit tests" />
+    <MESSAGE value="calculator API" />
+    <option name="LAST_COMMIT_MESSAGE" value="calculator API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -258,11 +267,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/nakulshah/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/nakulshah/CalculatorController.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
