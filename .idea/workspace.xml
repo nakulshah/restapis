@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="calculator API completed">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/LetsKotlin.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/LetsKotlinController.kt" afterDir="false" />
+    <list default="true" id="2f160705-9e92-4bd7-8ead-5cacbaf59e9a" name="Changes" comment="playing with Kotlin">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/LetsKotlinControllerTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nakulshah/LetsKotlin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/LetsKotlin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nakulshah/LetsKotlinController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nakulshah/LetsKotlinController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nakulshah/HelloControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nakulshah/HelloControllerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,7 @@
     "Gradle.GreetingControllerTests.noParamGreetingShouldReturnDefaultMessage.executor": "Run",
     "Gradle.HelloControllerTests.executor": "Run",
     "Gradle.HelloControllerTests.noParamHelloShouldReturnDefaultMessage.executor": "Run",
+    "Gradle.LetsKotlinControllerTest.defaultLetsKotlinShallReturnDefault.executor": "Run",
     "Gradle.restapis [:Main.main()].executor": "Run",
     "Gradle.restapis [:RestServiceApplication.main()].executor": "Run",
     "Gradle.restapis.executor": "Run",
@@ -89,7 +89,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.RestServiceApplication">
+  <component name="RunManager" selected="Gradle.LetsKotlinControllerTest.defaultLetsKotlinShallReturnDefault">
     <configuration name="RestServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nakulshah.RestServiceApplication" />
       <module name="restapis.main" />
@@ -103,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculateControllerTests.calculateBadOperator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CalculateControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,7 +116,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateBadOperator&quot;" />
+            <option value="&quot;com.nakulshah.CalculateControllerTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -127,7 +127,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CalculateControllerTests.calculateNullOperator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="HelloControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -140,7 +140,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.nakulshah.CalculateControllerTests.calculateNullOperator&quot;" />
+            <option value="&quot;com.nakulshah.HelloControllerTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="LetsKotlinControllerTest.defaultLetsKotlinShallReturnDefault" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.nakulshah.LetsKotlinControllerTest.defaultLetsKotlinShallReturnDefault&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,28 +195,13 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="gradlew" type="ShConfigurationType" temporary="true">
-      <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/gradlew" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/sh" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="true" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LetsKotlinControllerTest.defaultLetsKotlinShallReturnDefault" />
+        <item itemvalue="Gradle.HelloControllerTests" />
+        <item itemvalue="Gradle.CalculateControllerTests" />
         <item itemvalue="Application.RestServiceApplication" />
         <item itemvalue="Gradle.restapis" />
-        <item itemvalue="Shell Script.gradlew" />
-        <item itemvalue="Gradle.CalculateControllerTests.calculateNullOperator" />
-        <item itemvalue="Gradle.CalculateControllerTests.calculateBadOperator" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729737070737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="playing with Kotlin">
+      <option name="closed" value="true" />
+      <created>1731818028369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731818028369</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -262,7 +279,8 @@
     <MESSAGE value="with unit tests" />
     <MESSAGE value="calculator API" />
     <MESSAGE value="calculator API completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculator API completed" />
+    <MESSAGE value="playing with Kotlin" />
+    <option name="LAST_COMMIT_MESSAGE" value="playing with Kotlin" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -8,8 +8,9 @@ import org.springframework.web.bind.annotation.RestController
 class LetsKotlinController {
 
     @GetMapping("/letskotlin")
-    public fun letsKotlin(@RequestParam name: String): String {
-        var greet = LetsKotlin(name)
-        return greet.lets()
+    public fun letsKotlin(@RequestParam name: String): LetsKotlin {
+        var greet = LetsKotlin(name, "")
+        greet.lets()
+        return greet
     }
 }

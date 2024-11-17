@@ -16,12 +16,12 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class HelloControllerTests {
 
     @Autowired
-    private MockMvc mockMvc1;
+    private MockMvc mockMvc;
 
     @Test
     public void noParamHelloShouldReturnDefaultMessage() throws Exception {
 
-        this.mockMvc1.perform(get("/hello")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/hello")).andDo(print()).andExpect(status().isOk())
                 .andExpect(jsonPath("$.message").value("Hello World!"));
     }
 }

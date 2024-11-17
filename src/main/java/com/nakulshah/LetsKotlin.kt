@@ -1,8 +1,8 @@
 package com.nakulshah
 
-class LetsKotlin constructor(val name: String) {
-    fun lets(): String
+class LetsKotlin constructor(val name: String, var message: String) {
+    fun lets(): Unit
     {
-        return return "Let's Kotlin, $name!"
+        this.message = "Let's Kotlin, $name!"
     }
 }
