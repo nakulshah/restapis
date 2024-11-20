@@ -109,9 +109,20 @@ fun extension(){
 fun nullSafety() {
     var line: String = "my line"
     println(line)
-
     //line = null
 
+    var nullLine: String? = "my line"
+    println(nullLine)
+    println(nullLine?.length)
+    nullLine = null
+    println(nullLine)
+    println(nullLine?.length)
+    println(nullLine.toString())
+
+    val listWithNulls = listOf<String?>("NotNullString", null)
+
+    for (item in listWithNulls)
+        item?.let{println(it)}
 }
 
 
@@ -120,7 +131,7 @@ fun nullSafety() {
  *
  * -- Extension functions
  *
- * Null-safety
+ * -- Null-safety
  *
  * Smart casts (Java 16: Pattern Matching for instanceof)
  *
