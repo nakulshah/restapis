@@ -2,7 +2,6 @@ package com.nakulshah
 
 import org.junit.jupiter.api.Test
 
-
 class FiboTest {
     @Test
     public fun testFibo(): Unit{
