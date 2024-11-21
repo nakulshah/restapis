@@ -3,40 +3,42 @@ package com.nakulshah
 fun main(){
     println("hello main!")
 
-    println(exceptionsRequire(9))
-    try {
-        println(exceptionsRequire(-1)) //should throw require exception
-    }
-    catch(e: Exception){
-        println(e.stackTraceToString())
-    }
+    printfibo()
 
-    try {
-        println(exceptionsRequire(0)) //should throw Illegal Arg exception
-    }
-    catch(e: Exception){
-        println(e)
-    }
-
-    try {
-        println(exceptionsRequire(10)) //should throw check exception
-    }
-    catch(e: Exception){
-        println(e)
-    }
-
-    try {
-        println(exceptionsRequire(7)) //should throw check exception
-    }
-    catch(e: Exception){
-        println(e)
-    }
-
-    lambda()
-
-    extension()
-
-    nullSafety()
+//    println(exceptionsRequire(9))
+//    try {
+//        println(exceptionsRequire(-1)) //should throw require exception
+//    }
+//    catch(e: Exception){
+//        println(e.stackTraceToString())
+//    }
+//
+//    try {
+//        println(exceptionsRequire(0)) //should throw Illegal Arg exception
+//    }
+//    catch(e: Exception){
+//        println(e)
+//    }
+//
+//    try {
+//        println(exceptionsRequire(10)) //should throw check exception
+//    }
+//    catch(e: Exception){
+//        println(e)
+//    }
+//
+//    try {
+//        println(exceptionsRequire(7)) //should throw check exception
+//    }
+//    catch(e: Exception){
+//        println(e)
+//    }
+//
+//    lambda()
+//
+//    extension()
+//
+//    nullSafety()
 }
 
 fun exceptionsRequire(input: Int): Int {
@@ -123,6 +125,27 @@ fun nullSafety() {
 
     for (item in listWithNulls)
         item?.let{println(it)}
+}
+
+fun printfibo(): List<Int> {
+    var now: Int = 0
+    var next: Int = 1
+    var fiboList = mutableListOf<Int>()
+
+    fiboList.add(now)
+    fiboList.add(next)
+
+    while (next<100) {
+        val interim: Int = next
+        next = next + now
+        now = interim
+
+        fiboList.add(next)
+    }
+
+    println(fiboList)
+
+    return fiboList
 }
 
 
