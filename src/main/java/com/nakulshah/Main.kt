@@ -3,7 +3,9 @@ package com.nakulshah
 fun main(){
     println("hello main!")
 
-    printfibo()
+//    printfibo()
+
+    printAccount()
 
 //    println(exceptionsRequire(9))
 //    try {
@@ -148,6 +150,16 @@ fun printfibo(): List<Int> {
     return fiboList
 }
 
+fun printAccount(){
+    var account = Account("JD", "1234")
+    account.displayAccountInfo()
+
+    account.addPayment(500.00)
+    account.displayAccountInfo()
+
+    account.addExpense((1000).toDouble())
+    account.displayAccountInfo()
+}
 
 /**
  * -- Lambda expressions + Inline functions = performant custom control structures
